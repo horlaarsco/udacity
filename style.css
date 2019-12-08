@@ -29,7 +29,6 @@ nav {
 }
 .llg {
   margin-left: 0;
-
 }
 
 .logo {
@@ -108,9 +107,7 @@ li {
   padding-bottom: 30px;
 }
 
-.skill img {
-  max-width: 100%;
-}
+
 
 .kick {
   padding: 30px 30px;
@@ -135,6 +132,7 @@ a {
 }
 
 .programs {
+  padding: 10%;
   line-height: 1.2;
   text-align: left;
 }
@@ -145,6 +143,7 @@ a {
   text-align: center;
 }
 .services li {
+  position: relative;
   width: 80%;
   box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16),
     0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
@@ -156,8 +155,9 @@ a {
 
 .services li > img {
   position: absolute;
-  left: 7px;
-  margin-top: -5px;
+  left: -22px;
+  top: auto;
+  bottom: auto;
 }
 
 .services h3 {
@@ -172,7 +172,7 @@ a {
 
 .industries {
   text-align: center;
-  margin: 30px auto;
+  margin: 30px 10%;
 }
 .industries img {
   height: 48px;
@@ -209,8 +209,11 @@ a {
   flex-basis: 78%;
 }
 
+.degrees{
+  padding: 10%;
+}
 .works {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
   padding: 1px;
 }
@@ -246,28 +249,27 @@ a {
   text-transform: uppercase;
 }
 
-
-.hdiv{
+.hdiv {
   color: white;
   background-size: cover;
   max-width: 100%;
   display: block;
   height: auto;
   font-size: 0.8rem;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
-.hdiv1{
+.hdiv1 {
   background-image: url("./images/business.jpg");
 }
 
 .hdiv2 {
   background-image: url("./images/dsc.jpg");
 }
-.hdiv3{
+.hdiv3 {
   background-image: url("./images/ai.png");
 }
-.hdiv4{
+.hdiv4 {
   background-image: url("./images/intro-to-programming.jpg");
 }
 
@@ -279,27 +281,23 @@ a {
   background-image: url("./images/data-structures.jpg");
 }
 
-
-.check > div{
+.check > div {
   height: 210px;
   width: 80%;
   margin: 30px auto;
-  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
   border-radius: 10px;
   text-align: left;
-
 }
 
-.check > div >div{
-height: 50%;
-padding: 7%;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-
-
+.check > div > div {
+  height: 50%;
+  padding: 7%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.hdiv > div{
+.hdiv > div {
   border-radius: 4px;
   margin-top: 10px;
   padding: 0 7px;
@@ -307,63 +305,64 @@ border-top-right-radius: 10px;
   display: inline-block;
 }
 
-.hdiv > p:first-of-type{
+.hdiv > p:first-of-type {
   font-size: 0.5rem;
 }
 
-.check > h2, .check >p {
+.check > h2,
+.check > p {
   text-align: center;
   font-weight: 200;
 }
 
-
-.graduates{
-  background-color: rgba(29,124,248,.05);
+.graduates {
+  background-color: rgba(29, 124, 248, 0.05);
 }
-.check, .graduates{
+.check,
+.graduates {
   padding: 20px;
   margin-bottom: 20px;
   text-align: center;
 }
 
-.nums{
+.nums {
   padding: 20px;
 }
 
-.nums>div{
+.nums > div {
   display: flex;
   flex-direction: column;
   padding: 20px 40px;
 }
 
-.nums>div>p{
+.nums > div > p {
   font-weight: 400;
 }
 
-.nums h2{
+.nums h2 {
   margin: 20px;
 }
 
-.pupupu{
+.pupupu {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 20px 20px 80px;
-
 }
 
-.pupu{
+.pupu {
   padding: 5%;
 }
-.pupu>div{
+.pupu > div {
   margin: 20px auto 100px;
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 0 4px 0 rgba(17,22,26,.16), 0 2px 4px 0 rgba(17,22,26,.08), 0 4px 8px 0 rgba(17,22,26,.08);
-
+  width: 80%;
+  box-shadow: 0 0 4px 0 rgba(17, 22, 26, 0.16),
+    0 2px 4px 0 rgba(17, 22, 26, 0.08), 0 4px 8px 0 rgba(17, 22, 26, 0.08);
 }
 
-.pimg{
+.pimg {
   box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.1);
   background: #fff;
   width: 60px;
@@ -371,75 +370,85 @@ border-top-right-radius: 10px;
   border-radius: 50%;
   margin: 0 auto;
   margin-top: -50px;
-
 }
 
-.pimg img{
+.pimg img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-
 }
 
-.mike{
-  border-top: 3px solid #02b3e4; ;
+.mike {
+  border-top: 3px solid #02b3e4;
 }
 
-.ryan{
+.ryan {
   border-top: 3px solid #02ccba;
 }
 
-.isuare{
+.isuare {
   border-top: 3px solid #a951ed;
 }
 
-.dpupu{
+.dpupu {
   padding: 10px;
-line-height: 1.2;  
+  line-height: 1.2;
   background-color: #f7f7f8;
 }
 
-.mentor{
+.mentor {
   padding: 3%;
 }
 
-.mentor>div{
-  background-color: rgba(29,124,248,.05);
+.mentor > div {
+  background-color: rgba(29, 124, 248, 0.05);
 }
 
-.mentor>div>div{
+.mentor > div > div {
   padding: 10%;
   line-height: 1.5;
 }
-.mentor img
-{
+.mentorimg,.skillimg {
+  background-image: url("./images/mentor.jpg");
   max-width: 100%;
   display: block;
   height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+    line-height: 1.5;
 }
 
-.mentor h2{
+.skillimg {
+  background-image: url("./images/skill.jpg");
+  max-width: 100%;
+  display: block;
+  height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10%;
+    line-height: 1.5;
+}
+
+.mentor h2 {
   margin-bottom: 20px;
 }
 
-.mentor p
-  {
-    margin-bottom: 40px;
-  
+.mentor p {
+  margin-bottom: 40px;
 }
 
-#ebs a{
-  color: white  !important;
-
+#ebs a {
+  color: white !important;
 }
-#ebs{
+#ebs {
   border-radius: 5px;
   margin: 30px auto;
   padding: 10px;
   width: 70%;
   background-color: #02b3e4;
 }
-.ebsk{
+.ebsk {
   background-color: #fff;
   border-radius: 5px;
   margin: 30px auto;
@@ -447,8 +456,7 @@ line-height: 1.2;
   padding: 10px;
 }
 
-
-.find{
+.find {
   text-align: center;
   color: white;
   background-image: url(./images/bgfoot.jpg);
@@ -456,37 +464,35 @@ line-height: 1.2;
   background-size: cover;
   background-repeat: no-repeat;
   max-width: 100%;
-  padding: 70px 30px ;
+  padding: 70px 30px;
 }
 
-
-.fthingd{
+.fthingd {
   display: flex;
   justify-content: space-between;
   padding: 10px;
   margin: 10px auto;
 }
 
-.bfoot>div{
+.bfoot > div {
   margin: 0 auto;
-  box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);}
+  box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+}
 
-  .bfoot{
-    margin: 10px;
-  }
+.bfoot {
+  margin: 10px;
+}
 
-  footer{
-    text-align: center;
-    font-size: 0.5rem;
-    margin-bottom: 50px;
-    padding: 40px;
-  }
+footer {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px;
+}
 
-  #copy{
-    font-size: 0.8rem;
-    margin-bottom: 50px;
-  }
+#copy {
+  margin-bottom: 50px;
+}
 
-  hr{
-    margin: 30px;
-  }
+hr {
+  margin: 30px;
+}
