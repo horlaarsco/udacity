@@ -132,7 +132,6 @@ a {
 }
 
 .programs {
-  padding: 10%;
   line-height: 1.2;
   text-align: left;
 }
@@ -151,11 +150,12 @@ a {
   padding: 15px 20px 15px 50px;
   box-sizing: border-box;
   line-height: 1.5;
+  transform: translateX(12px);
 }
 
 .services li > img {
   position: absolute;
-  left: -22px;
+  left: -24px;
   top: auto;
   bottom: auto;
 }
@@ -172,7 +172,7 @@ a {
 
 .industries {
   text-align: center;
-  margin: 30px 10%;
+  margin: 30px 3%;
 }
 .industries img {
   height: 48px;
@@ -210,8 +210,10 @@ a {
 }
 
 .degrees{
-  padding: 10%;
+  padding: 5%;
 }
+
+
 .works {
   /* width: 80%; */
   margin: 0 auto;
@@ -267,7 +269,7 @@ a {
   background-image: url("./images/dsc.jpg");
 }
 .hdiv3 {
-  background-image: url("./images/ai.png");
+  background-image: url("./images/aii.jpg");
 }
 .hdiv4 {
   background-image: url("./images/intro-to-programming.jpg");
@@ -282,7 +284,7 @@ a {
 }
 
 .check > div {
-  height: 210px;
+  height: 200px;
   width: 80%;
   margin: 30px auto;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
@@ -408,11 +410,11 @@ a {
   padding: 10%;
   line-height: 1.5;
 }
-.mentorimg,.skillimg {
+.mentorimg {
   background-image: url("./images/mentor.jpg");
   max-width: 100%;
   display: block;
-  height: auto;
+  height: 8rem;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10%;
@@ -423,11 +425,12 @@ a {
   background-image: url("./images/skill.jpg");
   max-width: 100%;
   display: block;
-  height: auto;
+  height: 8rem;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 10%;
     line-height: 1.5;
+    
 }
 
 .mentor h2 {
@@ -495,4 +498,119 @@ footer {
 
 hr {
   margin: 30px;
+}
+
+
+@media only screen and (min-width: 400px) {
+  .check > div {
+    height: 18em;
+    width: 18rem;
+  }
+
+  .pupu > div{
+
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .pupu > div{
+width: 22rem;
+  }
+
+  .card{
+    width: 30rem;
+    left: 10%;
+    bottom: -20%;
+    height: 35rem;
+    padding: 5%;
+
+  }
+}
+
+@media only screen and (min-width: 650px) {
+
+.card{
+width: 35rem;
+}
+
+}
+
+@media only screen and (min-width: 750px) {
+.skill{
+  display: flex;
+  padding-bottom: 0;
+  padding-right: 5%;
+}
+
+.learn-more{
+  margin: auto;
+  width: 20rem;
+  
+}
+
+.graduates>div{
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.pupu {
+padding: 0;}
+
+.pupu>div{
+  width: 30%;
+  position: relative;
+}
+
+.dpupu{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.check{
+}
+.mentor {
+  padding: 0;
+}
+.mentor >div {
+  display: flex;
+}
+
+
+.mentor > div > div {
+  padding: 10%;
+
+}
+
+
+
+
+.skillimg{
+  height: auto;
+}
+
+section{
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+.industries img {
+  height: 5em;
+  width: 10rem;
+}
+
+.ready{
+
+}
+}
+
+
+@media only screen and (min-width: 1000px) {
+  section{
+    width: 80%;
+  }
 }
