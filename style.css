@@ -729,7 +729,7 @@ ul {
     box-shadow: 0 0 8px 0 rgba(17, 22, 26, 0.16),
       0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
   }
-}
+
 .hide-mobile ul {
   flex-basis: 50%;
   margin-bottom: 10%;
@@ -768,6 +768,8 @@ hr {
 
 .f3f8fe {
   background-color: #f3f8fe;
+}
+
 }
 
 @media only screen and (min-width: 1000px) {
