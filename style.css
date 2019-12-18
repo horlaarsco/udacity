@@ -1,6 +1,13 @@
+/* <span style="border-bottom:4px;border-bottom-color:#FFA234;border-bottom-style:solid">1-on-1</span> */
+
 * {
   margin: 0;
   padding: 0;
+}
+
+:focus {
+  outline-color: transparent;
+  outline-style: none;
 }
 
 body {
@@ -10,15 +17,12 @@ body {
   font-weight: 100;
   color: #525c65;
 }
-h2,
-h1 {
-  font-weight: 200;
-}
 .card h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 300;
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 200;
 }
 
@@ -74,6 +78,11 @@ nav {
 input {
   font-size: 1.3rem;
 }
+
+#learn {
+  border: 0;
+}
+
 #learn::placeholder {
   font-size: 1.05rem;
 }
@@ -105,6 +114,7 @@ li {
   margin-left: auto;
   background-color: #f3f8fe;
   padding-bottom: 30px;
+  margin-bottom: 70px;
 }
 
 .kick {
@@ -115,12 +125,14 @@ li {
 .learn-more {
   text-align: center;
   border: 1px solid dodgerblue;
-  padding: 6px;
-  width: 70%;
+  width: 10.13rem;
   margin: 10px auto -10px;
   box-shadow: 8px 10px 20px 0px rgba(46, 61, 73, 0.15);
   border-radius: 5px;
   font-size: 0.8rem;
+  letter-spacing: 0.094rem;
+  line-height: 2.875rem;
+  padding: 0 10px;
 }
 
 a {
@@ -134,10 +146,30 @@ a {
   text-align: left;
 }
 
-.programs h1 {
-  margin: 50px 4px;
-  font-size: 1.55rem;
+.programs h1,
+.industries h2,
+.degrees > h2,
+.ready > h2 {
+  margin: 70px 4px 30px;
+  font-size: 1.5rem;
   text-align: center;
+  font-weight: 200;
+}
+
+.find h2 {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+  font-weight: 200;
+  width: 12.38rem;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+.graduates h2,
+.seach h2,
+.graduates h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 200;
 }
 .services li {
   position: relative;
@@ -160,13 +192,18 @@ a {
 }
 
 .services h3 {
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   color: #2e3d49 !important;
   font-weight: 500;
+  margin-top: -10px;
+  margin-bottom: 20px;
 }
 
-.services p {
+.services span {
   color: #02b3e4 !important;
+  text-transform: uppercase;
+  display: block;
+  font-size: 0.8125rem;
 }
 
 .industries {
@@ -209,14 +246,14 @@ a {
 }
 
 .degrees {
-  padding: 5%;
+  padding: 0 5%;
 }
 
-.works {
-  /* width: 80%; */
+/* .works {
+  width: 80%;
   margin: 0 auto;
   padding: 1px;
-}
+} */
 
 .works > p {
   font-size: 0.9rem;
@@ -230,18 +267,21 @@ a {
 .ready {
   color: #fff;
   text-align: center;
-  padding: 10% 17%;
+  padding: 3% 17%;
   margin: 30px 0;
   line-height: 1.5;
+  font-size: 0.85rem;
 }
-.ready > h2 {
+/* .ready > h2 {
   margin-bottom: 20px;
-}
+} */
+
 .pga {
   background-color: #fff;
   border-radius: 5px;
   margin: 30px auto;
   padding: 10px;
+  width: 15rem;
 }
 
 #pga {
@@ -284,19 +324,33 @@ a {
 }
 
 .each {
-  height: 200px;
-  width: 80%;
+  height: 15rem;
+  width: 16rem;
   margin: 30px auto;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
-  border-radius: 10px;
+  border-radius: 0.25rem;
   text-align: left;
 }
 
 .each > div {
+  position: relative;
   height: 50%;
   padding: 7%;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.hdiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hdiv > div {
@@ -305,20 +359,26 @@ a {
   padding: 0 7px;
   background-color: #ff5483;
   display: inline-block;
+  z-index: 1;
 }
 
 .hdiv > p:first-of-type {
   font-size: 0.5rem;
 }
 
+.graduates {
+  background-color: #f3f8fe;
+}
 .seach {
   text-align: center;
   font-weight: 200;
+  margin: 0 1.375rem 2rem;
+  line-height: 1.5;
 }
 
 .check,
 .graduates {
-  padding: 20px;
+  padding: 40px 0;
   margin-bottom: 20px;
   text-align: center;
 }
@@ -328,6 +388,7 @@ a {
 }
 
 .nums > div {
+  text-align: center;
   display: flex;
   flex-direction: column;
   padding: 20px 40px;
@@ -335,10 +396,13 @@ a {
 
 .nums > div > p {
   font-weight: 400;
+  width: 13.63rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .nums h2 {
-  margin: 20px;
+  margin: 10px;
 }
 
 .pupupu {
@@ -401,7 +465,7 @@ a {
   margin-left: auto;
   background-color: #f3f8fe;
   padding-bottom: 30px;
-  height: 260px;
+  margin-bottom: 70px;
 }
 
 .mentor > div :nth-last-of-type(2) {
@@ -412,10 +476,10 @@ a {
   background-image: url("./images/mentor.jpg");
   max-width: 100%;
   display: block;
-  height: auto;
+  height: 8rem;
   background-size: cover;
   background-repeat: no-repeat;
-  flex: 11.63rem 0 0;
+  padding: 10%;
   line-height: 1.5;
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
@@ -437,8 +501,14 @@ a {
 .kat {
   padding: 30px 30px;
   font-size: 0.9rem;
-  width: 100%;
 }
+/* 
+.kat h2{
+  font-size: 0.9rem;
+
+  font-size: 1.5rem;
+  font-weight: 300;
+} */
 /* .mentor h2 {
   margin-bottom: 20px;
 }
@@ -446,7 +516,9 @@ a {
 .mentor p {
   margin-bottom: 40px;
 } */
-
+.mauto {
+  margin: 0 auto;
+}
 #ebs a {
   color: white !important;
 }
@@ -454,14 +526,14 @@ a {
   border-radius: 5px;
   margin: 30px auto;
   padding: 10px;
-  width: 70%;
+  width: 16.5rem;
   background-color: #02b3e4;
 }
 .ebsk {
   background-color: #fff;
   border-radius: 5px;
   margin: 30px auto;
-  width: 70%;
+  width: 16.5rem;
   padding: 10px;
 }
 
@@ -473,7 +545,6 @@ a {
 .find {
   text-align: center;
   color: white;
-  margin-bottom: 30px;
   max-width: 100%;
   padding: 70px 30px;
   margin-top: 30px;
@@ -481,6 +552,7 @@ a {
 
 footer {
   background-color: #f3f8fe;
+  font-size: 0.8125rem;
 }
 .fthingd {
   display: flex;
@@ -492,20 +564,22 @@ footer {
 .bfoot > div {
   margin: 0 auto;
   box-shadow: 5px 5px 25px 0 rgba(46, 61, 73, 0.2);
+  background-color: #fff;
 }
 
 .bfoot {
-  margin: 10px;
+  padding: 10px;
 }
 
 .ese {
   text-align: center;
-  margin-bottom: 50px;
   padding: 40px;
+  font-size: 0.5625rem;
 }
 
 #copy {
   margin-bottom: 50px;
+  font-size: 0.8125rem;
 }
 
 hr {
@@ -520,9 +594,13 @@ hr {
 ul {
   list-style: none;
 }
+
+.works > img {
+  display: none;
+}
 @media only screen and (min-width: 400px) {
   .each {
-    height: 18em;
+    height: 15rem;
     width: 18rem;
   }
 }
@@ -568,6 +646,19 @@ ul {
 }
 
 @media only screen and (min-width: 750px) {
+  .works > img {
+    display: show;
+  }
+  .programs h1,
+  .industries h2,
+  .degrees > h2,
+  .ready > h2,
+  .graduates h1,
+  graduates h2,
+  .seach h2,
+  .find h2 {
+    font-size: 2rem;
+  }
   .skill {
     display: flex;
     padding-bottom: 0;
@@ -576,7 +667,6 @@ ul {
 
   .learn-more {
     margin: auto;
-    width: 20rem;
   }
 
   .graduates > div {
@@ -627,8 +717,9 @@ ul {
   }
 
   .industries img {
-    height: 5em;
-    width: 10rem;
+    height: 4.5em;
+    width: 8rem;
+    margin: 2%;
   }
 
   .learn-more:nth-of-type(1) {
@@ -685,10 +776,13 @@ ul {
 
   .hm {
     display: flex;
-    padding: 10px 2%;
-    align-items: center;
+    padding: 30px 2% 10px 2%;
+    align-items: baseline;
   }
 
+  .hm img {
+    align-self: center;
+  }
   .hm ul {
     margin-left: auto;
     margin-right: 0;
@@ -730,46 +824,72 @@ ul {
       0 4px 8px 0 rgba(17, 22, 26, 0.08), 0 8px 16px 0 rgba(17, 22, 26, 0.08);
   }
 
-.hide-mobile ul {
-  flex-basis: 50%;
-  margin-bottom: 10%;
-}
-#copy {
-  margin-bottom: 0;
-}
+  .hide-mobile ul {
+    flex-basis: 50%;
+    margin-bottom: 10%;
+  }
+  #copy {
+    margin-bottom: 0;
+  }
 
-hr {
-  margin: 0;
-}
+  hr {
+    margin: 0;
+  }
 
-.ese ul {
-  text-align: left;
-  display: flex;
-}
-.ese li {
-  margin-right: 30px;
-}
+  .ese ul {
+    text-align: left;
+    display: flex;
+  }
+  .ese li {
+    margin-right: 30px;
+  }
 
-.degrees > div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+  .degrees > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-.degrees > h2 {
+  /* .degrees > h2 {
   text-align: center;
   font-size: 2.6rem;
-}
-.works {
-  flex-basis: 30%;
-  width: 20%;
-  margin: 3%;
-}
+} */
+  .works {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 1%;
+    flex-basis: 48%;
+  }
 
-.f3f8fe {
-  background-color: #f3f8fe;
-}
+  .works > div {
+    flex-basis: 60%;
+  }
 
+  .works img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 40%;
+
+    background-position: center;
+  }
+
+  .careers > div {
+    display: none;
+  }
+
+  .careers {
+    margin: 0;
+    line-height: 1.5;
+  }
+  .careers > p {
+    flex-basis: 100%;
+  }
+  .f3f8fe {
+    background-color: #f3f8fe;
+  }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -798,9 +918,12 @@ hr {
   .seach > h2 {
     font-weight: 100;
     font-size: 2rem;
-    line-height: 1.5;
+    line-height: 2.5rem;
   }
 
+  .seach p {
+    margin-top: 16px;
+  }
   .each {
     flex-basis: 30%;
   }
